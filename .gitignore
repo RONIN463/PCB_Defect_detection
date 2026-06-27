@@ -1,0 +1,47 @@
+# Python cache and local runtime files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+.venv/
+venv/
+env/
+
+# Local IDE / agent metadata
+.agents/
+.codex/
+.trae/
+.vscode/
+.idea/
+
+# Logs and generated reports
+*.log
+*.csv
+
+# Dataset images and annotations are not committed to GitHub
+数据集_增广后/**
+!数据集_增广后/
+!数据集_增广后/README.md
+
+pc_pcb/PCB_DATASET/
+pc_pcb/save_data/
+pc_pcb/evaluation_results/
+
+yolov8/yolov8_pcb_dataset/images/
+yolov8/yolov8_pcb_dataset/labels/
+
+# Training outputs: keep only selected model artifacts
+yolov8/runs/
+pc_pcb/runs/*
+!pc_pcb/runs/
+!pc_pcb/runs/best.pt
+
+# Deployment / archive files not needed in source repository
+K230/k230_1389.zip
+PCB缺陷检测汇报.pptx
+
+# Keep K230 deployment model and config
+!K230/MAX/mp_deployment_source/
+!K230/MAX/mp_deployment_source/best.kmodel
+!K230/MAX/mp_deployment_source/deploy_config.json
